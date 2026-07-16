@@ -48,7 +48,7 @@ Full architecture details and implementation file locations are documented in
 | `Data/` | Required raw GSE83894 and GSE142696 input files plus checksums. |
 | `Results/` | Lightweight manuscript-ready summary tables from the retained 9-model package. |
 | `Docs/` | Model architecture notes and UniReg schematic files. |
-| `Supplementary_Material/` | Lightweight ABD extension code and summary tables. |
+| `Supplementary_Material/` | Supplementary code and summary tables. |
 
 ## Included Data
 
@@ -63,17 +63,6 @@ Data/raw/GSE142696/GSE142696_9MPRA.ActivityRatios.tsv.gz
 Data/raw/GSE142696/GSE142696_9MPRA.ActivityRatios.IndividualReps.tsv.gz
 ```
 
-Checksums are stored in:
-
-```text
-Data/raw_manifest.tsv
-```
-
-The optional motif database for FIMO post hoc analyses is not included:
-
-```text
-Data/raw/motif/H14CORE_meme_format.meme
-```
 
 
 
@@ -128,7 +117,7 @@ final retained-model package, including:
 - seven-task R-only retained-model rankings;
 - GSE142696 design-by-trim retained-model summaries;
 - ceiling, endpoint-gap, transfer, negative-control and trim-robustness tables;
-- ABD extension summary tables for matched-library episomal assays and
+- summary tables for matched-library episomal assays and
   orthogonal HepG2 variant-MPRA analyses.
 
 
