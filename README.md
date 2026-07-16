@@ -1,11 +1,7 @@
 # UniReg
 
 UniReg is an assay-aware regulatory sequence modeling workflow for paired
-lentiMPRA data. The manuscript-facing UniReg model is:
-
-```text
-cnn3head_kmer_fused_ens
-```
+lentiMPRA data.
 
 UniReg predicts the paired-lentiMPRA activity contrast:
 
@@ -14,16 +10,11 @@ Delta = log2(WT / MT) = log2_WT - log2_MT
 ```
 
 where WT denotes the integrated reporter-state activity and MT denotes the
-episomal reporter-state activity. The repository is designed for
-manuscript-level reproducibility of the v34 retained-model analyses, not as a
-general-purpose installable Python package.
+episomal reporter-state activity.
 
 ![UniReg model schematic](Docs/Unireg.png)
 
-The editable/source schematic is available as
-[`Docs/Unireg.pdf`](Docs/Unireg.pdf). A GitHub-friendly PNG render is stored at
-[`Docs/Unireg.png`](Docs/Unireg.png). The original v3 schematic source is also
-kept as [`Docs/unireg-v3.pdf`](Docs/unireg-v3.pdf).
+
 
 ## Model Summary
 
@@ -84,25 +75,7 @@ The optional motif database for FIMO post hoc analyses is not included:
 Data/raw/motif/H14CORE_meme_format.meme
 ```
 
-## Retained 9-Model Set
 
-The v34 manuscript uses the retained main-text 9-model set only:
-
-1. `cnn3head_kmer_fused_ens` (UniReg)
-2. `cnn_delta_ens`
-3. `cnn_msres_wt_mt_delta3head_ens`
-4. `gkmsvm_optional`
-5. `kmer_delta_ens`
-6. `kmer_elasticnet_delta_ens`
-7. `nt_transformer_delta_ens`
-8. `kmer_nystroem_ridge_delta_ens`
-9. `onehot_ridge_delta_ens`
-
-The retained list is also stored at:
-
-```text
-Results/maintext9/mpra_maintext9_research_pkg_20260314_183510/00_manifest/models_kept_maintext9.txt
-```
 
 ## Quick Start
 
@@ -158,8 +131,7 @@ final retained-model package, including:
 - ABD extension summary tables for matched-library episomal assays and
   orthogonal HepG2 variant-MPRA analyses.
 
-Full model checkpoints and complete per-element prediction matrices are not
-included.
+
 
 ## Key Implementation Files
 
